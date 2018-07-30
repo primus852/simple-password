@@ -4,7 +4,7 @@
     "description": "Simple Password Generator",
     "type": "package",
     "require": {
-      "php": "^7.0",
+      "php": "^7.0"
     },
     "license": "gplv3",
     "authors": [
