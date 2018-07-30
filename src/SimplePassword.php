@@ -241,6 +241,14 @@ class SimplePassword
         }
 
     }
+	
+    /**
+     * @return string
+     */
+    public static function pw(): string
+    {
+        return self::$pw;
+    }
 
     /**
      * Return all input vars and resulting character set
