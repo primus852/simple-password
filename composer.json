@@ -6,7 +6,7 @@
     "require": {
       "php": "^7.0"
     },
-    "license": "gplv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Torsten Wolter",
