@@ -1,0 +1,23 @@
+{
+  "name": "primus852/simple-password",
+  "version": "1.0.0",
+    "description": "Simple Password Generator",
+    "type": "package",
+    "require": {
+      "php": "^7.0",
+    },
+    "license": "gplv3",
+    "authors": [
+        {
+            "name": "Torsten Wolter",
+            "email": "findnibbler@gmail.com",
+            "homepage": "https://leaguestreams.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "primus852\\SimplePassword\\": "src/"
+        }
+    }
+}
