@@ -1,4 +1,5 @@
 <?php
+
 namespace primus852\SimplePassword;
 
 class SimplePassword
@@ -241,13 +242,27 @@ class SimplePassword
         }
 
     }
-	
+
     /**
      * @return string
      */
     public static function pw(): string
     {
         return self::$pw;
+    }
+
+    /**
+     * @return int
+     * @throws SimplePasswordException
+     */
+    public static function strength() : int
+    {
+        if(self::$pw === null){
+            throw new SimplePasswordException('No Password given to check');
+        }
+
+        return SimplePasswordStrength::checkScore(self::$pw);
+
     }
 
     /**
@@ -275,5 +290,5 @@ class SimplePassword
         );
 
     }
-	
+
 }
