@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: torsten
- * Date: 31.07.2018
- * Time: 08:35
- */
 
 namespace primus852\SimplePassword;
 
