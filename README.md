@@ -2,6 +2,9 @@
 A simple configurable Password Generator
 
 ### Changelog
+#### 1.2.0
+- Added Bcrypt to Output
+
 #### 1.1.0
 - Removed  `<` and `>` from Special Characters
 

@@ -244,6 +244,26 @@ class SimplePassword
     }
 
     /**
+     * @see http://php.net/manual/de/function.password-hash.php
+     * @param int $algo
+     * @param array $options
+     * @return bool|string
+     */
+    public static function bcrypt(int $algo = PASSWORD_BCRYPT, $options = array('cost' => 12))
+    {
+        return password_hash(self::$pw, $algo, $options);
+    }
+
+    /**
+     * @param string $hash
+     * @return bool
+     */
+    public static function verify(string $hash)
+    {
+        return password_verify(self::$pw, $hash);
+    }
+
+    /**
      * @return string
      */
     public static function pw(): string
@@ -255,9 +275,9 @@ class SimplePassword
      * @return int
      * @throws SimplePasswordException
      */
-    public static function strength() : int
+    public static function strength(): int
     {
-        if(self::$pw === null){
+        if (self::$pw === null) {
             throw new SimplePasswordException('No Password given to check');
         }
 
